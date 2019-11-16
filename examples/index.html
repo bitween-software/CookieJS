@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<div id="firstElementToRemove" style="display: none;">
+	Eerste element dat moet verdwijnen via een cookie.
+	<p>
+		Klik op "Verdwijn via Cookie" en herlaad de pagina om het resultaat te zien!
+	</p>
+	<div>
+		<button id="firstButton">Verdwijn via Cookie</button>
+	</div>
+</div>
+
+<div id="secondElementToRemove" style="display: none;">
+	Tweede element dat moet verdwijnen via een cookie.
+	<p>
+		Klik op "Verdwijn via Cookie" en herlaad de pagina om het resultaat te zien!
+	</p>
+	<div>
+		<button id="secondButton">Verdwijn via Cookie</button>
+	</div>
+</div>
+</body>
+</html>
+
+<script src="../dist/cookie.js"></script>
+<script>
+    initializeCookieListener('#firstButton', '#firstElementToRemove');
+    initializeCookieListener('#secondButton', '#secondElementToRemove');
+</script>

@@ -1,0 +1,22 @@
+{
+  "name": "javascript-cookie",
+  "version": "1.0.0",
+  "description": "This repository will hold the logic to create a basic Cookie remember listener.",
+  "main": "src/cookie.js",
+  "devDependencies": {
+    "laravel-mix": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.bitween.dev/scm/bt/javascript-cookie.git"
+  },
+  "author": "Jarno Vogelzang",
+  "license": "ISC"
+}
