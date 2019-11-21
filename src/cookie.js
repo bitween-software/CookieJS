@@ -2,8 +2,8 @@ const cookieAcceptedKey ='cookieAccepted';
 const cookieAcceptedValue = 'true';
 
 let initializeCookieListener = function(onclickElement, elementToHide) {
-    if(typeof Cookies.get(cookieAcceptedKey + elementToHide) === 'undefined' && Cookies.get(cookieAcceptedKey + elementToHide) !== cookieAcceptedValue) {
-        $(elementToHide).show();
+    if(Cookies.get(cookieAcceptedKey + elementToHide) === cookieAcceptedValue) {
+        $(elementToHide).remove();
     }
 
     $(onclickElement).click(function (event) {
